@@ -1,14 +1,77 @@
 html {
     background-color: #202020;
     color: #dadada;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #content {
     width: 80%;
-    margin: 50px auto;
     text-align: center;
+    float: left;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
 }
 
 #logo {
     width: 200px;
+}
+
+.navigation {
+    width: 10%;
+    height: 100%;
+    float: left;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation:hover {
+    background-color: #303030;
+}
+
+.outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.arrow {
+    width: 0;
+}
+
+.navigation:hover .arrow {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
