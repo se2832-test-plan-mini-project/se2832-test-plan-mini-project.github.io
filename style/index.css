@@ -2,3 +2,8 @@ html {
     background-color: #202020;
     color: #dadada;
 }
+
+#container {
+    width: 80%;
+    margin: 50px auto;
+}
