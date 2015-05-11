@@ -2,7 +2,7 @@
 
 ### Live Demo
 
-[http://se2832-test-plan-mini-project.github.io/](http://se2832-test-plan-mini-project.github.io/)
+[https://se2832-test-plan-mini-project.github.io/](https://se2832-test-plan-mini-project.github.io/)
 
 ### Scenario:
 
