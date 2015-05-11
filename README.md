@@ -1,5 +1,9 @@
 # Test Plan Mini-project
 
+### Live Demo
+
+[http://se2832-test-plan-mini-project.github.io/](http://se2832-test-plan-mini-project.github.io/)
+
 ### Scenario:
 
 Microsoft used to own the world with their sophisticated IDE, Microsoft Visual Studio. It’s built-in
