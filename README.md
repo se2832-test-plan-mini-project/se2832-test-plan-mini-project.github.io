@@ -1,7 +1,6 @@
-Test Plan Mini-project
-======================
+# Test Plan Mini-project
 
-Scenario:
+### Scenario:
 
 Microsoft used to own the world with their sophisticated IDE, Microsoft Visual Studio. It’s built-in
 tools and integrations enhanced developer productivity to such an extent Windows-based software
@@ -27,7 +26,7 @@ DEVELOPERS!”). Satya plans on releasing this project along side Windows 10. Sa
 most important characteristics of this new IDE as the following; it doesn’t crash, it is simple to use,
 and that it looks like an Office application.
 
-Assignment:
+### Assignment:
 
 * Work in teams of 3 or 4 and produce a ~10 minute presentation of your plan.
 * Presentations will be given during the last lab period (5/14)
