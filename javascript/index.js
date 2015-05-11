@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function navigateTo(page) {
-  var page = '/slide/'+page+'.html';
+  var page = 'slide/'+page+'.html';
   $.get(page, function(html) {
     $('#content').html(html);
   });
