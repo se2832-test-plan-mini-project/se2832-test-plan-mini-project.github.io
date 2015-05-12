@@ -10,6 +10,20 @@ $(document).ready(function() {
   });
 });
 
+$(document).keydown(function(e) {
+  switch(e.which) {
+    case 37: // left arrow key
+      navigatePrevious();
+      break;
+    case 39: // right arrow key
+      navigateNext();
+      break;
+    default:
+      return;
+  }
+  e.preventDefault();
+});
+
 function navigateTo(page) {
   currentLocation = page;
   $('#content').html(slides[page]);
