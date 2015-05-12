@@ -12,7 +12,6 @@ $(document).ready(function() {
 
 function navigateTo(page) {
   currentLocation = page;
-  console.log(page);
   $('#content').html(slides[page]);
 }
 
