@@ -2,11 +2,15 @@ var slideNames = ['index', 'slide-1', 'slide-2', 'slide-3', 'slide-4', 'slide-5'
 var slides = {};
 var currentLocation;
 
+// selectors
+var content;
+
 $(document).ready(function() {
   loadSlides(function() {
     navigateTo('index', false);
     $('#previous').click(navigatePrevious);
     $('#next').click(navigateNext);
+    content = $('#content');
   });
 });
 
@@ -31,9 +35,9 @@ function navigateTo(page, animate) {
     $('#content').html(html);
     return;
   }
-  $('#content').animate({height: '1px'}, 125, function() {
-    $('#content').html(html);
-    $('#content').animate({height: '100%'}, 125);
+  content.animate({height: '1px'}, 125, function() {
+    content.html(html);
+    content.animate({height: '100%'}, 125);
   });
 }
 
