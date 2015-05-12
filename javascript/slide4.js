@@ -1,15 +1,14 @@
 // constructor
-function index() {
+function slide4() {
 
 }
 
 // Called when the slide is opened
-index.prototype.enter = function() {
+slide4.prototype.enter = function() {
   $('h1').css('color', Please.make_color());
-  console.log('entering');
 };
 
 // Called when the slide is closed
-index.prototype.exit = function() {
+slide4.prototype.exit = function() {
 
 };
