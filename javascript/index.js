@@ -26,12 +26,13 @@ $(document).keydown(function(e) {
 
 function navigateTo(page, animate) {
   currentLocation = page;
+  var html = slides[page].html;
   if (animate === false) {
-    $('#content').html(slides[page]);
+    $('#content').html(html);
     return;
   }
   $('#content').animate({height: '1px'}, 125, function() {
-    $('#content').html(slides[page]);
+    $('#content').html(html);
     $('#content').animate({height: '100%'}, 125);
   });
 }
@@ -56,7 +57,9 @@ function loadSlides(callback) {
     (function(slideName) {
       var slide = 'slide/'+slideName+'.html';
       $.get(slide, function(html) {
-        slides[slideName] = html;
+        slides[slideName] = {
+          html: html
+        };
         completed ++;
         if (completed == slideNames.length) {
           callback();
