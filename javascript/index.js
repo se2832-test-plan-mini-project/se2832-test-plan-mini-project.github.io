@@ -30,9 +30,9 @@ function navigateTo(page, animate) {
     $('#content').html(slides[page]);
     return;
   }
-  $('#content').animate({height: '1px'}, 250, function() {
+  $('#content').animate({height: '1px'}, 125, function() {
     $('#content').html(slides[page]);
-    $('#content').animate({height: '100%'}, 250);
+    $('#content').animate({height: '100%'}, 125);
   });
 }
 
