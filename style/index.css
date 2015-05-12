@@ -1,19 +1,15 @@
 html {
-    background-color: #202020;
-    color: #dadada;
     border: 0;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
+    background-color: #202020;
+    color: #dadada;
 }
 
 body {
     border: 0;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -22,10 +18,25 @@ body {
     user-select: none;
 }
 
+#container {
+    height: 100%;
+}
+
+#previous {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#next {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 #content {
     width: 80%;
     text-align: center;
-    float: left;
     border: 0;
     padding: 0;
     margin: 0 auto;
@@ -38,7 +49,6 @@ body {
 .navigation {
     width: 10%;
     height: 100%;
-    float: left;
     border: 0;
     padding: 0;
     margin: 0;
@@ -73,11 +83,4 @@ body {
 .navigation:hover .arrow {
     width: 80%;
     margin: 0 auto;
-}
-
-.clear {
-    clear: both;
-    border: 0;
-    padding: 0;
-    margin: 0;
 }
