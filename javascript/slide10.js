@@ -35,7 +35,7 @@ function ayylmao() {
                 $('#ayylmao' + i).css({
                     top: ($(window).height()) + 'px'
                 });
-                setTimeout(ayylmao, 2000);
+                setTimeout(ayylmao, 10000);
             }
         );
     }
