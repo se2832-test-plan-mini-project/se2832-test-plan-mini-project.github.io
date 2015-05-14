@@ -26,21 +26,15 @@ function ayylmao() {
     console.log(direction);
     console.log(distance);
     $('#ayylmao').css(direction, distance+'px')
-        .animate({
+    .animate({
             top: '-100px'
         },
         10000,
         function() {
-            setTimeout(function() {
-                $('#ayylmao').animate({
-                        top: ($(window).height())+'px'
-                    },
-                    2000,
-                    function() {
-                        setTimeout(ayylmao, 2000);
-                    }
-                );
-            }, 4000);
+            $('#ayylmao').css({
+                    top: ($(window).height())+'px'
+                });
+            setTimeout(ayylmao, 2000);
         }
     );
 }
