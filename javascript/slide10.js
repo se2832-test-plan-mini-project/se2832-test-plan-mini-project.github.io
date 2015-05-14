@@ -9,6 +9,7 @@ slide10.prototype.enter = function() {
   $.each($('p'), function(){
     $(this).css('color', Please.make_color());
   });
+    console.log("Ayyyyyylmao");
     ayylmao();
 };
 
