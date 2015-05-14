@@ -12,7 +12,6 @@ $(document).ready(function() {
     $('#ninja').css('top', ($(window).height())+'px');
     content = $('#content');
     navigateTo('index');
-    setTimeout(ninja, 20000);
   });
 });
 
@@ -27,18 +26,18 @@ function ninja() {
   $('#ninja').animate({
       top: ($(window).height()-100)+'px'
     },
-    2500,
+    2000,
     function() {
       setTimeout(function() {
         $('#ninja').animate({
             top: ($(window).height())+'px'
           },
-          2500,
+          2000,
           function() {
-            setTimeout(ninja, 15000);
+            setTimeout(ninja, 20000);
           }
         );
-      }, 2500);
+      }, 4000);
     }
   );
 }
