@@ -9,10 +9,38 @@ $(document).ready(function() {
   loadSlides(function() {
     $('#previous').click(navigatePrevious);
     $('#next').click(navigateNext);
+    $('#ninja').css('top', ($(window).height())+'px');
     content = $('#content');
     navigateTo('index');
   });
 });
+
+function ninja() {
+  var distance = Math.floor((Math.random() * 800) - 100);
+  $('#ninja').css('left', '');
+  $('#ninja').css('right', '');
+  var direction = (Math.floor(Math.random()*2) == 0) ? 'left' : 'right';
+  console.log(direction);
+  console.log(distance);
+  $('#ninja').css(direction, distance+'px');
+  $('#ninja').animate({
+      top: ($(window).height()-100)+'px'
+    },
+    2000,
+    function() {
+      setTimeout(function() {
+        $('#ninja').animate({
+            top: ($(window).height())+'px'
+          },
+          2000,
+          function() {
+            setTimeout(ninja, 20000);
+          }
+        );
+      }, 4000);
+    }
+  );
+}
 
 $(document).keydown(function(e) {
   switch(e.which) {
