@@ -4,7 +4,7 @@ function slide10() {
 }
 
 // Called when the slide is opened
-slide9.prototype.enter = function() {
+slide10.prototype.enter = function() {
   $('h1').css('color', Please.make_color());
   $.each($('p'), function(){
     $(this).css('color', Please.make_color());
@@ -12,6 +12,6 @@ slide9.prototype.enter = function() {
 };
 
 // Called when the slide is closed
-slide9.prototype.exit = function() {
+slide10.prototype.exit = function() {
 
 };
