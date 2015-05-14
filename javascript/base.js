@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#ninja').css('top', ($(window).height())+'px');
     content = $('#content');
     navigateTo('index');
-    setTimeout(ninja, 30000);
+    setTimeout(ninja, 35000);
   });
 });
 
@@ -35,7 +35,7 @@ function ninja() {
           },
           2000,
           function() {
-            setTimeout(ninja, 20000);
+            setTimeout(ninja, 27500);
           }
         );
       }, 4000);
