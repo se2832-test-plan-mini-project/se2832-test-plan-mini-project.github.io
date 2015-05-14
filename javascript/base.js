@@ -1,4 +1,4 @@
-var slideNames = ['index', 'slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8', 'slide9'];
+var slideNames = ['index', 'slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8', 'slide9', 'slide10'];
 var slides = {};
 var currentLocation = 'index';
 
