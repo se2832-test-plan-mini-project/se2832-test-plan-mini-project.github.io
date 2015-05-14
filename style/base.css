@@ -86,3 +86,8 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
+#ninja {
+    position: fixed;
+    top: 5000px;
+}
