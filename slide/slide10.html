@@ -9,6 +9,7 @@
 <script type="javascript">
 
     function ayylmao() {
+        console.log("Ayyyyyylmao");
         var distance = Math.floor((Math.random() * 800) - 100);
         $('#ayylmao').css('left', '')
                 .css('right', '');
@@ -17,9 +18,9 @@
         console.log(distance);
         $('#ayylmao').css(direction, distance+'px')
                 .animate({
-                    top: ($(window).height()-100)+'px'
+                    top: '0px'
                 },
-                2000,
+                10000,
                 function() {
                     setTimeout(function() {
                         $('#ayylmao').animate({
@@ -27,7 +28,7 @@
                                 },
                                 2000,
                                 function() {
-                                    setTimeout(ayylmao, 20000);
+                                    setTimeout(ayylmao, 2000);
                                 }
                         );
                     }, 4000);
