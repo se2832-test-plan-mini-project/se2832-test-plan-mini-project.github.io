@@ -27,13 +27,13 @@ function ayylmao() {
     console.log(distance);
     $('#ayylmao').css(direction, distance+'px')
     .animate({
-            top: '-100px'
+            top: '-200px'
         },
-        10000,
+        Math.random() * 10000,
         function() {
             $('#ayylmao').css({
                     top: ($(window).height())+'px'
-                });
+            });
             setTimeout(ayylmao, 2000);
         }
     );
