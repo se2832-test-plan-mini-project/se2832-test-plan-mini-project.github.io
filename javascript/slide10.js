@@ -9,7 +9,6 @@ slide10.prototype.enter = function() {
   $.each($('p'), function(){
     $(this).css('color', Please.make_color());
   });
-    console.log("Ayyyyyylmao");
     ayylmao();
 };
 
@@ -20,7 +19,6 @@ slide10.prototype.exit = function() {
 
 
 function ayylmao() {
-    console.log("Ayyyyyylmao");
     var distance = Math.floor((Math.random() * 800) - 100);
     $('#ayylmao').css('left', '')
         .css('right', '');
@@ -29,7 +27,7 @@ function ayylmao() {
     console.log(distance);
     $('#ayylmao').css(direction, distance+'px')
         .animate({
-            top: '0px'
+            top: '-100px'
         },
         10000,
         function() {
