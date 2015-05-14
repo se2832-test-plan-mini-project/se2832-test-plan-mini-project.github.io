@@ -1,5 +1,39 @@
+
+
 <br>
 <br>
 
 <h1>ayyy</h1>
 <p>We're done.</p>
+
+<script type="javascript">
+
+    function ayylmao() {
+        var distance = Math.floor((Math.random() * 800) - 100);
+        $('#ayylmao').css('left', '')
+                .css('right', '');
+        var direction = (Math.floor(Math.random()*2) == 0) ? 'left' : 'right';
+        console.log(direction);
+        console.log(distance);
+        $('#ayylmao').css(direction, distance+'px')
+                .animate({
+                    top: ($(window).height()-100)+'px'
+                },
+                2000,
+                function() {
+                    setTimeout(function() {
+                        $('#ayylmao').animate({
+                                    top: ($(window).height())+'px'
+                                },
+                                2000,
+                                function() {
+                                    setTimeout(ayylmao, 20000);
+                                }
+                        );
+                    }, 4000);
+                }
+        );
+    }
+
+    ayylmao();
+</script>
