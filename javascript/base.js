@@ -12,6 +12,7 @@ $(document).ready(function() {
     $('#ninja').css('top', ($(window).height())+'px');
     content = $('#content');
     navigateTo('index');
+    setTimeout(ninja, 30000);
   });
 });
 
